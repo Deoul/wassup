@@ -1,7 +1,6 @@
 plugins {
     id 'java'
     id 'com.github.johnrengelman.shadow' version '7.1.2'
-    id 'maven-publish'  // Плагин для публикации пакетов
 }
 
 group = 'com.matrix.operations'
@@ -9,15 +8,6 @@ version = '1.0-SNAPSHOT'
 
 repositories {
     mavenCentral()
-
-    // Добавляем GitHub Packages как репозиторий
-    maven {
-        url = uri("https://maven.pkg.github.com/Deoul/wassup")
-        credentials {
-            username = project.findProperty("gpr.user") ?: System.getenv("GPR_USER")  // Получаем имя пользователя из переменной окружения
-            password = project.findProperty("gpr.token") ?: System.getenv("GPR_TOKEN")  // Получаем токен из переменной окружения
-        }
-    }
 }
 
 dependencies {
@@ -51,20 +41,3 @@ javadoc {
     destinationDir = file("$buildDir/docs/javadoc")
 }
 
-// Публикация в GitHub Packages
-publishing {
-    publications {
-        mavenJava(MavenPublication) {
-            from components.java
-        }
-    }
-    repositories {
-        maven {
-            url = uri("https://maven.pkg.github.com/Deoul/wassup")
-            credentials {
-                username = project.findProperty("gpr.user") ?: System.getenv("GPR_USER")
-                password = project.findProperty("gpr.token") ?: System.getenv("GPR_TOKEN")
-            }
-        }
-    }
-}
