@@ -1,6 +1,7 @@
 plugins {
     id 'java'
     id 'com.github.johnrengelman.shadow' version '7.1.2'
+    id 'maven-publish'  // Плагин для публикации пакетов
 }
 
 group = 'com.matrix.operations'
@@ -8,12 +9,21 @@ version = '1.0-SNAPSHOT'
 
 repositories {
     mavenCentral()
+
+    // Добавляем GitHub Packages как репозиторий
+    maven {
+        url = uri("https://maven.pkg.github.com/Deoul/wassup")
+        credentials {
+            username = project.findProperty("gpr.user") ?: System.getenv("GPR_USER")  // Получаем имя пользователя из переменной окружения
+            password = project.findProperty("gpr.token") ?: System.getenv("GPR_TOKEN")  // Получаем токен из переменной окружения
+        }
+    }
 }
 
 dependencies {
     implementation 'org.apache.logging.log4j:log4j-api:2.17.1'
     implementation 'org.apache.logging.log4j:log4j-core:2.17.1'
-    testImplementation 'junit:junit:4.13'  // Зависимость для JUnit
+    testImplementation 'junit:junit:4.13'
 }
 
 shadowJar {
@@ -23,7 +33,7 @@ shadowJar {
 
     manifest {
         attributes(
-                'Main-Class': 'com.matrix.operations.MatrixOperations'  // Указываем основной класс
+                'Main-Class': 'com.matrix.operations.MatrixOperations'
         )
     }
 }
@@ -36,8 +46,25 @@ test {
     useJUnit()  // Для JUnit 4
 }
 
-// Задача для генерации JavaDoc
+// Генерация JavaDoc
 javadoc {
-    destinationDir = file("$buildDir/docs/javadoc")  // Папка для сохранения JavaDoc
+    destinationDir = file("$buildDir/docs/javadoc")
 }
 
+// Публикация в GitHub Packages
+publishing {
+    publications {
+        mavenJava(MavenPublication) {
+            from components.java
+        }
+    }
+    repositories {
+        maven {
+            url = uri("https://maven.pkg.github.com/Deoul/wassup")
+            credentials {
+                username = project.findProperty("gpr.user") ?: System.getenv("GPR_USER")
+                password = project.findProperty("gpr.token") ?: System.getenv("GPR_TOKEN")
+            }
+        }
+    }
+}

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.matrix.operations.MatrixOperationsTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2025-12-16T05:40:39.063Z" hostname="DESKTOP-UP9CUPR" time="0.408">
+<testsuite name="com.matrix.operations.MatrixOperationsTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2025-12-16T18:31:41.095Z" hostname="DESKTOP-UP9CUPR" time="0.388">
   <properties/>
-  <testcase name="testAddMatrices" classname="com.matrix.operations.MatrixOperationsTest" time="0.407"/>
+  <testcase name="testAddMatrices" classname="com.matrix.operations.MatrixOperationsTest" time="0.386"/>
+  <testcase name="testMultiplyMatrices" classname="com.matrix.operations.MatrixOperationsTest" time="0.0"/>
   <testcase name="testSubtractMatrices" classname="com.matrix.operations.MatrixOperationsTest" time="0.0"/>
-  <system-out><![CDATA[2025-12-16 08:40:39,335 Test worker ERROR PatternLayout contains an invalid element or attribute "encoding"
-2025-12-16 08:40:39,355 Test worker ERROR PatternLayout contains an invalid element or attribute "encoding"
-]]></system-out>
+  <testcase name="testCalculateDeterminant" classname="com.matrix.operations.MatrixOperationsTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

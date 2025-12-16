@@ -2,3 +2,43 @@
 2025-12-16 08:13:44 ERROR MatrixOperations:47 - Необходимо указать два файла для чтения матриц.
 2025-12-16 08:19:08 INFO  MatrixOperations:20 - Программа запущена.
 2025-12-16 08:19:08 ERROR MatrixOperations:47 - Необходимо указать два файла для чтения матриц.
+2025-12-16 20:52:13 INFO  MatrixOperations:27 - Программа запущена.
+2025-12-16 20:52:13 ERROR MatrixOperations:31 - Необходимо указать два файла для чтения матриц.
+2025-12-16 20:54:22 INFO  MatrixOperations:27 - Программа запущена.
+2025-12-16 20:54:22 INFO  MatrixOperations:89 - Чтение матрицы из файла: C:/Users/MSI/Desktop/kursach/matrix1.txt
+2025-12-16 20:54:22 INFO  MatrixOperations:89 - Чтение матрицы из файла: C:/Users/MSI/Desktop/kursach/matrix2.tx
+2025-12-16 20:54:22 ERROR MatrixOperations:120 - Файл не найден: C:/Users/MSI/Desktop/kursach/matrix2.tx
+java.io.FileNotFoundException: C:\Users\MSI\Desktop\kursach\matrix2.tx (Не удается найти указанный файл)
+	at java.io.FileInputStream.open0(Native Method) ~[?:?]
+	at java.io.FileInputStream.open(FileInputStream.java:185) ~[?:?]
+	at java.io.FileInputStream.<init>(FileInputStream.java:139) ~[?:?]
+	at java.util.Scanner.<init>(Scanner.java:662) ~[?:?]
+	at com.matrix.operations.MatrixOperations.readMatrixFromFile(MatrixOperations.java:90) [kursach-1.0-SNAPSHOT.jar:?]
+	at com.matrix.operations.MatrixOperations.main(MatrixOperations.java:42) [kursach-1.0-SNAPSHOT.jar:?]
+2025-12-16 20:54:22 ERROR MatrixOperations:44 - Ошибка при чтении матриц.
+java.io.IOException: Файл не найден: C:/Users/MSI/Desktop/kursach/matrix2.tx
+	at com.matrix.operations.MatrixOperations.readMatrixFromFile(MatrixOperations.java:121) ~[kursach-1.0-SNAPSHOT.jar:?]
+	at com.matrix.operations.MatrixOperations.main(MatrixOperations.java:42) [kursach-1.0-SNAPSHOT.jar:?]
+Caused by: java.io.FileNotFoundException: C:\Users\MSI\Desktop\kursach\matrix2.tx (Не удается найти указанный файл)
+	at java.io.FileInputStream.open0(Native Method) ~[?:?]
+	at java.io.FileInputStream.open(FileInputStream.java:185) ~[?:?]
+	at java.io.FileInputStream.<init>(FileInputStream.java:139) ~[?:?]
+	at java.util.Scanner.<init>(Scanner.java:662) ~[?:?]
+	at com.matrix.operations.MatrixOperations.readMatrixFromFile(MatrixOperations.java:90) ~[kursach-1.0-SNAPSHOT.jar:?]
+	... 1 more
+2025-12-16 20:55:39 INFO  MatrixOperations:27 - Программа запущена.
+2025-12-16 20:55:39 INFO  MatrixOperations:89 - Чтение матрицы из файла: C:/Users/MSI/Desktop/kursach/matrix1.txt
+2025-12-16 20:55:39 INFO  MatrixOperations:89 - Чтение матрицы из файла: C:/Users/MSI/Desktop/kursach/matrix2.txt
+2025-12-16 20:55:39 INFO  MatrixOperations:64 - Сложение матриц выполнено.
+2025-12-16 20:55:39 INFO  MatrixOperations:65 - Вычитание матриц выполнено.
+2025-12-16 20:55:39 INFO  MatrixOperations:66 - Умножение матриц выполнено.
+2025-12-16 20:55:39 INFO  MatrixOperations:67 - Вычисление определителей завершено.
+2025-12-16 20:55:39 INFO  MatrixOperations:77 - Программа завершила выполнение.
+2025-12-16 21:11:20 INFO  com.matrix.operations.MatrixOperations - Программа запущена.
+2025-12-16 21:11:20 INFO  com.matrix.operations.MatrixOperations - Чтение матрицы из файла: C:/Users/MSI/Desktop/kursach/matrix1.txt
+2025-12-16 21:11:20 INFO  com.matrix.operations.MatrixOperations - Чтение матрицы из файла: C:/Users/MSI/Desktop/kursach/matrix2.txt
+2025-12-16 21:11:20 INFO  com.matrix.operations.MatrixOperations - Сложение матриц выполнено.
+2025-12-16 21:11:20 INFO  com.matrix.operations.MatrixOperations - Вычитание матриц выполнено.
+2025-12-16 21:11:20 INFO  com.matrix.operations.MatrixOperations - Умножение матриц выполнено.
+2025-12-16 21:11:20 INFO  com.matrix.operations.MatrixOperations - Вычисление определителей завершено.
+2025-12-16 21:11:20 INFO  com.matrix.operations.MatrixOperations - Программа завершила выполнение.
