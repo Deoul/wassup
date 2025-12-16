@@ -1,0 +1,43 @@
+plugins {
+    id 'java'
+    id 'com.github.johnrengelman.shadow' version '7.1.2'
+}
+
+group = 'com.matrix.operations'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.apache.logging.log4j:log4j-api:2.17.1'
+    implementation 'org.apache.logging.log4j:log4j-core:2.17.1'
+    testImplementation 'junit:junit:4.13'  // Зависимость для JUnit
+}
+
+shadowJar {
+    archiveBaseName.set("kursach")
+    archiveClassifier.set("")
+    archiveVersion.set("1.0-SNAPSHOT")
+
+    manifest {
+        attributes(
+                'Main-Class': 'com.matrix.operations.MatrixOperations'  // Указываем основной класс
+        )
+    }
+}
+
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
+
+test {
+    useJUnit()  // Для JUnit 4
+}
+
+// Задача для генерации JavaDoc
+javadoc {
+    destinationDir = file("$buildDir/docs/javadoc")  // Папка для сохранения JavaDoc
+}
+
