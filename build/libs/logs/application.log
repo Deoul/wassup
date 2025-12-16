@@ -42,3 +42,54 @@ Caused by: java.io.FileNotFoundException: C:\Users\MSI\Desktop\kursach\matrix2.t
 2025-12-16 21:11:20 INFO  com.matrix.operations.MatrixOperations - Умножение матриц выполнено.
 2025-12-16 21:11:20 INFO  com.matrix.operations.MatrixOperations - Вычисление определителей завершено.
 2025-12-16 21:11:20 INFO  com.matrix.operations.MatrixOperations - Программа завершила выполнение.
+2025-12-16 22:32:19 INFO  com.matrix.operations.MatrixOperations - Программа запущена.
+2025-12-16 22:32:19 INFO  com.matrix.operations.MatrixOperations - Чтение матрицы из файла: C:/Users/MSI/Desktop/kursach/matrix1.txt
+2025-12-16 22:32:43 INFO  com.matrix.operations.MatrixOperations - Программа запущена.
+2025-12-16 22:32:43 INFO  com.matrix.operations.MatrixOperations - Чтение матрицы из файла: C:/Users/MSI/Desktop/kursach/matrix1.txt
+2025-12-16 22:35:13 INFO  com.matrix.operations.MatrixOperations - Программа запущена.
+2025-12-16 22:35:13 INFO  com.matrix.operations.MatrixOperations - Чтение матрицы из файла: C:/Users/MSI/Desktop/kursach/matrix1.txt
+2025-12-16 23:00:31 INFO  com.matrix.operations.MatrixOperations - Программа запущена.
+2025-12-16 23:00:31 INFO  com.matrix.operations.MatrixOperations - Чтение матрицы из файла: C:/Users/MSI/Desktop/kursach/matrix1.txt
+2025-12-16 23:02:15 INFO  com.matrix.operations.MatrixOperations - Программа запущена.
+2025-12-16 23:02:15 INFO  com.matrix.operations.MatrixOperations - Чтение матрицы из файла: C:/Users/MSI/Desktop/kursach/matrix1.txt
+2025-12-16 23:02:15 INFO  com.matrix.operations.MatrixOperations - Чтение матрицы из файла: C:/Users/MSI/Desktop/kursach/matrix2.txt
+2025-12-16 23:02:15 INFO  com.matrix.operations.MatrixOperations - Сложение матриц выполнено.
+2025-12-16 23:02:15 INFO  com.matrix.operations.MatrixOperations - Вычитание матриц выполнено.
+2025-12-16 23:02:15 INFO  com.matrix.operations.MatrixOperations - Умножение матриц выполнено.
+2025-12-16 23:02:15 INFO  com.matrix.operations.MatrixOperations - Вычисление определителей завершено.
+2025-12-16 23:02:15 INFO  com.matrix.operations.MatrixOperations - Программа завершила выполнение.
+2025-12-16 23:07:17 INFO  com.matrix.operations.MatrixOperations - Программа запущена.
+2025-12-16 23:07:17 INFO  com.matrix.operations.MatrixOperations - Чтение матрицы из файла: C:/Users/MSI/Desktop/kursach/matrix1.txt
+2025-12-16 23:10:33 INFO  com.matrix.operations.MatrixOperations - Программа запущена.
+2025-12-16 23:10:33 INFO  com.matrix.operations.MatrixOperations - Чтение матрицы из файла: C:/Users/MSI/Desktop/kursach/matrix1.txt
+2025-12-16 23:10:33 INFO  com.matrix.operations.MatrixOperations - Чтение матрицы из файла: C:/Users/MSI/Desktop/kursach/matrix2.txt
+2025-12-16 23:10:33 ERROR com.matrix.operations.MatrixOperations - Ошибка: матрицы имеют разные размеры для сложения.
+2025-12-16 23:14:41 INFO  com.matrix.operations.MatrixOperations - Программа запущена.
+2025-12-16 23:14:41 INFO  com.matrix.operations.MatrixOperations - Чтение матрицы из файла: C:/Users/MSI/Desktop/kursach/matrix1.txt
+2025-12-16 23:14:41 INFO  com.matrix.operations.MatrixOperations - Чтение матрицы из файла: C:/Users/MSI/Desktop/kursach/matrix2.txt
+2025-12-16 23:14:41 INFO  com.matrix.operations.MatrixOperations - Сложение матриц выполнено.
+2025-12-16 23:14:41 INFO  com.matrix.operations.MatrixOperations - Вычитание матриц выполнено.
+2025-12-16 23:14:41 INFO  com.matrix.operations.MatrixOperations - Умножение матриц выполнено.
+2025-12-16 23:14:41 INFO  com.matrix.operations.MatrixOperations - Вычисление определителей завершено.
+2025-12-16 23:14:41 INFO  com.matrix.operations.MatrixOperations - Программа завершила выполнение.
+2025-12-16 23:16:31 INFO  com.matrix.operations.MatrixOperations - Программа запущена.
+2025-12-16 23:16:31 INFO  com.matrix.operations.MatrixOperations - Чтение матрицы из файла: C:/Users/MSI/Desktop/kursach/matrix1.txt
+2025-12-16 23:16:31 ERROR com.matrix.operations.MatrixOperations - Файл не найден: C:/Users/MSI/Desktop/kursach/matrix1.txt
+java.io.FileNotFoundException: C:\Users\MSI\Desktop\kursach\matrix1.txt (Не удается найти указанный файл)
+	at java.io.FileInputStream.open0(Native Method) ~[?:?]
+	at java.io.FileInputStream.open(FileInputStream.java:185) ~[?:?]
+	at java.io.FileInputStream.<init>(FileInputStream.java:139) ~[?:?]
+	at java.util.Scanner.<init>(Scanner.java:662) ~[?:?]
+	at com.matrix.operations.MatrixOperations.readMatrixFromFile(MatrixOperations.java:90) [kursach-1.0-SNAPSHOT.jar:?]
+	at com.matrix.operations.MatrixOperations.main(MatrixOperations.java:41) [kursach-1.0-SNAPSHOT.jar:?]
+2025-12-16 23:16:31 ERROR com.matrix.operations.MatrixOperations - Ошибка при чтении матриц.
+java.io.IOException: Файл не найден: C:/Users/MSI/Desktop/kursach/matrix1.txt
+	at com.matrix.operations.MatrixOperations.readMatrixFromFile(MatrixOperations.java:121) ~[kursach-1.0-SNAPSHOT.jar:?]
+	at com.matrix.operations.MatrixOperations.main(MatrixOperations.java:41) [kursach-1.0-SNAPSHOT.jar:?]
+Caused by: java.io.FileNotFoundException: C:\Users\MSI\Desktop\kursach\matrix1.txt (Не удается найти указанный файл)
+	at java.io.FileInputStream.open0(Native Method) ~[?:?]
+	at java.io.FileInputStream.open(FileInputStream.java:185) ~[?:?]
+	at java.io.FileInputStream.<init>(FileInputStream.java:139) ~[?:?]
+	at java.util.Scanner.<init>(Scanner.java:662) ~[?:?]
+	at com.matrix.operations.MatrixOperations.readMatrixFromFile(MatrixOperations.java:90) ~[kursach-1.0-SNAPSHOT.jar:?]
+	... 1 more
