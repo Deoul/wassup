@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="80bb6cd1-d39f-4bf2-8fa4-4d4c092ade1d" name="Changes" comment="" />
+    <list default="true" id="80bb6cd1-d39f-4bf2-8fa4-4d4c092ade1d" name="Changes" comment="chief keef">
+      <change beforePath="$PROJECT_DIR$/logs/application.log" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -38,6 +40,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "Deoul"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Deoul/hood.git",
+    "accountId": "9bd02c14-4f76-4500-8069-a8408c44ee51"
+  }
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 1
@@ -57,6 +71,7 @@
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
     "settings.editor.selected.configurable": "vcs.Git"
   }
@@ -172,6 +187,19 @@
       <option name="presentableId" value="Default" />
       <updated>1765852949039</updated>
     </task>
+    <task id="LOCAL-00001" summary="chief keef">
+      <option name="closed" value="true" />
+      <created>1765864099357</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1765864099358</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="chief keef" />
+    <option name="LAST_COMMIT_MESSAGE" value="chief keef" />
   </component>
 </project>
